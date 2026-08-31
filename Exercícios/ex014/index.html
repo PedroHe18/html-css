@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes do CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+            
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            
+            usar em e px
+            */
+            font-size: 1em;
+
+            /* lighter normal bold bolder */
+        }
+
+        h1 {
+
+            /* shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+            
+                        font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalho com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, assumenda excepturi! Culpa id et eveniet eos quidem expedita nam odit ipsum cumque asperiores in, iure fugiat sit laborum dignissimos numquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum aliquam aperiam animi quasi ratione illo iusto. Assumenda mollitia laboriosam, atque, placeat consectetur sit tempora doloremque suscipit asperiores culpa dicta. Deleniti.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores omnis quo beatae facilis minus dignissimos vero itaque, qui quod dolorum iste. Nostrum, temporibus molestiae. Suscipit adipisci soluta cum? Sit, omnis!</p>
+</body>
+</html>
