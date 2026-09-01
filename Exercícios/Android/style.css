@@ -146,6 +146,11 @@ header a:hover {
 
 .midia {
     text-align: center;
+    padding: 10px;
+}
+
+picture {
+    max-width: 450px;
 }
 
 picture {
@@ -154,13 +159,19 @@ picture {
 
 .midia-video {
     padding-block: 15px;
+    padding-bottom: 54.9%;
 
     background-color:#1a5c37;
-    text-align: center;
+    position: relative;
 }
 
 .video {
     border-radius: 5px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 aside {
