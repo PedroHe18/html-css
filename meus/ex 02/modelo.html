@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercício</title>
+    <link rel="Stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Título</h1>
+    </header>
+    <section>
+        <div>
+            Vc quer descobrir a Área e o Perimetro de qual forma geométrica?
+            <p><input type="radio" name="radGeo" id="Retangulo">
+            <label for="Retangulo">Retangulo</label>
+            <input type="radio" name="radGeo" id="Quadrado">
+            <label for="Quadrado">Quadrado</label>
+            <input type="radio" name="radGeo" id="Triangulo">
+            <label for="Triangulo">Triangulo</label></p>
+            <script>
+            if (radGeo[0].checked) {
+                <input type="number" name="Base" id="base"></input>;
+                <input type="number" name="Altura" id="altura"></input>;
+            } else if (radGeo[1].checked) {
+                <input type="number" name="Lado" id="lado"></input>;
+                } else if (radGeo[2].checked) {
+                    <input type="number" name="Base" id="base"></input>;
+                    <input type="number" name="Altura" id="altura"></input>;
+                }
+            </script>
+            <p><input type="button" value="Calcular" onclick="calcular()"></p>
+        </div>
+        <div>
+            Olá!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVídeo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
