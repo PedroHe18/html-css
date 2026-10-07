@@ -4,107 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
     <title>Telefone</title>
-    <style>
-        * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        }
-
-        body {
-            background-color: #f0f0f0;
-            background-image: url(imagens/fundo-madeira.jpg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            min-height: 100vh;
-        }
-
-        div.centralizar {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: inline-block;
-            z-index: 5;
-        }
-
-        div.cell {
-            position: relative;
-            width: 270px;
-            height: 478px;
-        }
-
-        img.tell {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 312px;
-            height: auto;
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 10;
-            border: none;
-        }
-
-        nav {
-            justify-content: center;
-            width: 60px;
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 20;
-        }
-
-        img.links {
-            margin-block: 5px;
-            width: 60px;
-            height: auto;
-            border-radius: 50%;
-        }
-
-        img.links:hover {
-            width: 63px;
-            border: 1px solid white;
-            transition: 0.2s;
-        }
-    </style>
 </head>
 <body>
-    <div class="centralizar">
-        <div class="cell">
-            <img class="tell" src="imagens/frame-iphone.png" alt="Telefone">
-            <iframe id="tela" name="tela"></iframe>
-        </div>
-    </div>
-    <nav>
-        <a href="paginas-externas/home.html" target="tela"><img class="links" src="imagens/logo-home.jpg"></a>
-        <a href="paginas-externas/youtube.html" target="tela"><img class="links" src="imagens/logo-youtube.jpg" alt=""></a>
-        <a href="paginas-externas/github.html" target="tela"><img class="links" src="imagens/logo-github.jpg" alt=""></a>
-        <a href="paginas-externas/insta.html" target="tela"><img class="links" src="imagens/logo-instagram.jpg" alt=""></a>
-        <a href="paginas-externas/twitter.html" target="tela"><img class="links" src="imagens/logo-twitter.jpg" alt=""></a>
-        <a href="paginas-externas/face.html" target="tela"><img class="links" src="imagens/logo-facebook.jpg" alt=""></a>
-    </nav>
 
-
-
-
-    <script>
-        function clicou() {
-            s = window.document.getElementById("saida")
-            s.innerHTML += '<p>Voce clicou!</p>'
-        }
+    <main>
+        <section class="cell">
+            <iframe id="tela" name="tela" src="paginas-externas/home.html"></iframe>
+        </section>
+        <section class="pag">
+            <a href="paginas-externas/home.html" target="tela"><img class="links" src="imagens/logo-home.jpg"></a><br>
+            <a href="paginas-externas/youtube.html" target="tela"><img class="links" src="imagens/logo-youtube.jpg" alt=""></a><br>
+            <a href="paginas-externas/github.html" target="tela"><img class="links" src="imagens/logo-github.jpg" alt=""></a><br>
+            <a href="paginas-externas/insta.html" target="tela"><img class="links" src="imagens/logo-instagram.jpg" alt=""></a><br>
+            <a href="paginas-externas/twitter.html" target="tela"><img class="links" src="imagens/logo-twitter.jpg" alt=""></a><br>
+            <a href="paginas-externas/face.html" target="tela"><img class="links" src="imagens/logo-facebook.jpg" alt=""></a>
+        </section>
+    </main>
     </script>
 </body>
 </html>
