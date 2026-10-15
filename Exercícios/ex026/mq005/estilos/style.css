@@ -74,40 +74,8 @@ p {
         display: none;
     }
 
-    ul {
-        gap: 5px;
-        display: flex;
-        list-style-type: none;
-    }
-
-    li {
-        color: white;
-        cursor: pointer;
-        transition: 0.2s;
-    }
-
-    a {
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        text-align: center;
-        background-color: rgb(87, 87, 87);
-        color: white;
-        border-top: 2px solid gray;
-    }
-
-    a:hover {
-        background-color: gray;
-        transition: 0.2s;
-    }
-
     main {
-        padding: 10px;
-        margin: auto;
-        margin-top: 10px;
         width: 90vw;
-        background-color: white;
-        border-radius: 10px;
     }
 }
 
@@ -116,48 +84,7 @@ p {
         display: none;
     }
 
-    ul {
-        gap: 5px;
-        display: flex;
-        list-style-type: none;
-    }
-
-    li {
-        background-color: gray;
-        color: white;
-        cursor: pointer;
-        transition: 0.2s;
-    }
-
-    menu {
-        display: block;
-    }
-
-    menu {
-        list-style-type: none;
-    }
-
-    a {
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        text-align: center;
-        background-color: rgb(87, 87, 87);
-        color: white;
-        border-top: 2px solid gray;
-    }
-
-    a:hover {
-        background-color: gray;
-        transition: 0.2s;
-    }
-
     main {
-        padding: 10px;
-        margin: auto;
-        margin-top: 10px;
-        background-color: white;
         width: 700px;
-        border-radius: 10px;
     }
 }
