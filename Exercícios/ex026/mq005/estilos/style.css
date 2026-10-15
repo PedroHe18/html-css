@@ -68,23 +68,3 @@ p {
     text-align: justify;
     text-indent: 20px;
 }
-
-@media screen and (min-width: 450px) and (max-width: 768px) {
-    span#burguer {
-        display: none;
-    }
-
-    main {
-        width: 90vw;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    span#burguer {
-        display: none;
-    }
-
-    main {
-        width: 700px;
-    }
-}
