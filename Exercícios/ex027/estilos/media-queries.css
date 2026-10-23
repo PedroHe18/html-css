@@ -10,6 +10,12 @@ Desktop: 992px até 1200px
 Grandes telas: acima de  1200px
 */
 
+:root {
+    --verde: #49a09d;
+    --lilas: #5f2c82;
+    --font-principal: Arial, Helvetica, sans-serif;
+}
+
 @media screen and (max-width: 768px) {
     section {
         height: 50vh;
@@ -20,12 +26,13 @@ Grandes telas: acima de  1200px
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
-        background-image: linear-gradient(0, rgb(0, 115, 130), indigo);
+        background-image: linear-gradient(0, var(--verde), var(--lilas));
     }
 
     section {
         padding-top: 0px;
         width: 80vw;
+        height: auto;
         background-position: left;
         transition: 0.2s;
     }
@@ -40,12 +47,13 @@ Grandes telas: acima de  1200px
 
 @media screen and (min-width: 992px) {
     body {
-        background-image: linear-gradient(0, rgb(0, 115, 130), indigo);
+        background-image: linear-gradient(0, var(--verde), var(--lilas));
     }
 
     section {
         padding-top: 0px;
         width: 800px;
+        height: auto;
         background-position: right;
         transition: 0.2s;
     }
