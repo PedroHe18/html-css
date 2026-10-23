@@ -19,6 +19,10 @@ Grandes telas: acima de  1200px
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(0, rgb(0, 115, 130), indigo);
+    }
+
     section {
         padding-top: 0px;
         width: 80vw;
@@ -35,6 +39,10 @@ Grandes telas: acima de  1200px
 }
 
 @media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(0, rgb(0, 115, 130), indigo);
+    }
+
     section {
         padding-top: 0px;
         width: 800px;
