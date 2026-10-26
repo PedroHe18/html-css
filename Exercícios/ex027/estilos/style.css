@@ -32,7 +32,6 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
     background-color: white;
     border-radius: 20px;
@@ -40,7 +39,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    transition: 0.2s;
+    transform: translate(-50%, -50%);
 }
 
 article {
@@ -48,7 +47,6 @@ article {
     padding: 10px;
     background-color: white;
     border-radius: 0px 0px 20px 20px;
-    transition: 0.2s;
 }
 
 h1 {
@@ -74,7 +72,7 @@ svg {
 }
 
 input.entrada {
-    width: 100%;
+    width: calc(100% - 40px); /* Ou width: 100%; */
     margin: 4px;
     height: 30px;
     border: none;
@@ -90,7 +88,7 @@ input.entrada::placeholder {
     text-indent: 5px;
 }
 
-input#entrar {
+input[type=submit] {
     width: 100%;
     height: 40px;
     border: none;
@@ -100,11 +98,11 @@ input#entrar {
     cursor: pointer;
 }
 
-input#entrar:hover {
+input[type=submit]:hover {
     background-color: rgb(48, 110, 129);
 }
 
-input#esqueci-senha {
+input[type=button] {
     margin-block: 5px;
     width: 100%;
     height: 40px;
@@ -115,7 +113,7 @@ input#esqueci-senha {
     cursor: pointer;
 }
 
-input#esqueci-senha:hover {
+input[type=button]:hover {
     background-color: rgb(69, 158, 185);
     color: white;
 }
