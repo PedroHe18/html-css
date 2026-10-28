@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+            height: 300px;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+
+            /*
+
+            justify-content = só mexe no eixo principal
+            align-items = só mexe no eixo transversal
+
+            -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+                Tipos de justify-content's 
+            -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+               - flex-end = cola todos no fim
+               - flex-start = cola todos no início
+               - center = cola todos no centro, seja de um row ou de um column
+               - space-between = cola o primeiro no início, o último no fim e o resto no meio com seu devido espaçamento
+               - space-evenly = o mesmo que "space-between" só que com um espaçamento (todos do mesmo tamanho) do início para o primeiro e do final para o último
+               - space-around = ele cria espaços na mesma quantidade que os itens de dentro e centraliza cada item em cada espaço
+
+            -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+                   Tipos de align-items
+            -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+                - stretch = estica os elemento no seu eixo transversal
+                - flex-start = deixa no início do eixo transversal
+                - flex-end = deixa no final do eixo transversal
+                - center = deixa os itens no meio conforme o eixo transversal
+            -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+            */
+        }
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+</body>
+</html>
