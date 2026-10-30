@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            Tipos de align-content's
+        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+            - stretch = ele estica os itens até caber no contêiner todo
+            - flex-start = cola os itens no início do contêiner
+            - flex-end = cola os itens no final do contêiner
+            - center = deixa todos centralizados
+            - space-between = deixa um espaço entre cada item (nao tem espaço nem no início nem no final, e o espaço é até completar o contêiner)
+            - space-evenly = diferente do "space-between", ele deixa um espaço no início e no final
+            - space-around = ele faz um espaço para cada fileira e centraliza o item dentro do espaço
+
+        */
+        
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-around;
+            height: 400px;
+        }
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+</body>
+</html>
