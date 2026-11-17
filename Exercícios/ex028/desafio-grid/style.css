@@ -1,17 +1,24 @@
 * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 div.cont {
+    width: 100vw;
+    height: 100vh;
     display: grid;
-    height: 500px;
-    grid-template: 100px 60px auto 60px / auto 50% auto;
-    align-items: center;
-    justify-items: center;
+    grid-template: 80px 40px 1fr 60px / auto 50% auto;
+    text-align: center;
+}
+
+div.cont > div {
+    padding: 10px;
 }
 
 div.topo {
-    grid-area: 1 / 1 / 2 / 4;
+    grid-area: 1 / 1 / 2 / -1;
 }
 
 div.menu {
@@ -19,11 +26,11 @@ div.menu {
 }
 
 div.principal {
-    grid-area: 3 / 1 / 4  / 3;
+    grid-area: 3 / 1 / -2  / -2;
 }
 
 div.secundario {
-    grid-area: 3 / 3 / 4 / 4;
+    grid-area: 3 / 3 / -2 / -1;
 }
 
 div.rodape {
